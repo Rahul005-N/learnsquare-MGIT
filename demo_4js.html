@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon"href="D:\learnsquare\javascript\favicon.ico"/>
+	<title>
+		rahul.com
+	</title>
+</head>
+<body><center>    <h1>Login Page</h1>
+        <input type="text" id="loginId" placeholder="Enter Login ID"><br>
+        <input type="password" id="password" placeholder="Enter Password"><br>
+        <button type="submit" onclick="submitForm()">Submit</button>
+        <button type="button" onclick="cancelForm()">Cancel</button></center>
+    
+    
+
+    <script>
+        function submitForm() {
+            event.preventDefault();
+            const loginId = document.getElementById('loginId').value;
+            const password = document.getElementById('password').value;
+            alert(Login ID: ${loginId}\nPassword: ${password});
+        }
+
+        function cancelForm() {
+            document.getElementById('loginId').value = '';
+            document.getElementById('password').value = '';
+        }
+    </script>
+</body>
+</html>
